@@ -24,11 +24,11 @@
 [root@localhost ~]# tabdump site | grep master
 [root@localhost ~]# tabdump site | grep dhcpinterfaces
 [root@localhost ~]# lsblk
-[root@localhost ~]# dd if=/dev/sr0 of=/root/Centos7.6.iso
-[root@localhost ~]# copycds Centos7.6.iso 
+[root@localhost ~]# dd if=/dev/sr0 of=/root/centos7.iso
+[root@localhost ~]# copycds /root/centos7.iso 
 [root@localhost ~]# lsdef -t osimage
-[root@localhost ~]# ll install Centos7.6.iso 
-[root@localhost ~]# lsdef -t osimage Centos7.6.iso 
+[root@localhost ~]# ll install centos7.iso 
+[root@localhost ~]# lsdef -t osimage centos7.iso 
 [root@localhost ~]# genimage centos7.9-x86_64-netboot-compute
 [root@localhost ~]# mkdir -p /install/custom/netboot/
 [root@localhost ~]# chdef -t osimage centos7.9-x86_64-netboot-compute synclists="/install/custom/netboot/compute.synclist"
